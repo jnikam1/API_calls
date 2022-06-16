@@ -1,12 +1,18 @@
 const express = require('express')
 
-const UserModel = require('../model/users.model')
+const controller = require('../controller/user.controller')
 
-const router = express.router()
+const router = express.Router()
 
 
 // Req client for data
 // res from database
-router.post('/create',(req,res)=>{
+router.post('/create', controller.create)
 
-})
+router.get('/read', controller.read)
+
+router.put('/update/:id', controller.update)
+
+router.put('/delete/:id', controller.deleteUsers)
+
+module.exports = router
