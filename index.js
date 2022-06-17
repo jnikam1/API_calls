@@ -21,7 +21,7 @@ const username = "jnikam1"
 const password = "1234"
 const dbName = "Employee"
 
-const MongoURL = `mongodb+srv://${username}:${password}@cluster0.8uptl.mongodb.net/${dbName }?retryWrites=true&w=majority`
+const MongoURL = `mongodb+srv://${username}:${password}@cluster0.8uptl.mongodb.net/${dbName}?retryWrites=true&w=majority`
 
 // Connecct to database
 // 1. URL
